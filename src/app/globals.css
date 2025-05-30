@@ -119,6 +119,12 @@ body {
   transform: scale(1.1);
 }
 
+.social-icon {
+  width: 80px;
+  height: 80px;
+  color: #fff;
+}
+
 /* About page styles */
 .about-page {
   position: relative;
@@ -377,6 +383,11 @@ h3 {
   .social-icons a {
     padding: 16px;
   }
+  
+  .social-icon {
+    width: 64px;
+    height: 64px;
+  }
 }
 
 /* Small mobile phones */
@@ -416,5 +427,10 @@ h3 {
   
   .social-icons a {
     padding: 12px;
+  }
+  
+  .social-icon {
+    width: 48px;
+    height: 48px;
   }
 }

@@ -21,13 +21,13 @@ export default function Home() {
 
       <div className="social-icons">
         <a href="https://twitter.com/" target="_blank" rel="noopener noreferrer" aria-label="Twitter">
-          <SiX style={{ width: 80, height: 80, color: '#fff' }} />
+          <SiX className="social-icon" />
         </a>
         <a href="https://github.com/" target="_blank" rel="noopener noreferrer" aria-label="GitHub">
-          <FaGithub style={{ width: 80, height: 80, color: '#fff' }} />
+          <FaGithub className="social-icon" />
         </a>
         <a href="https://linkedin.com/" target="_blank" rel="noopener noreferrer" aria-label="LinkedIn">
-          <FaLinkedin style={{ width: 80, height: 80, color: '#fff' }} />
+          <FaLinkedin className="social-icon" />
         </a>
       </div>
     </div>
