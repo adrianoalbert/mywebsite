@@ -53,35 +53,46 @@ body {
   align-items: center;
   justify-content: center;
   width: 100%;
-  margin-top: -10cm;
+  padding: 20px;
+  max-width: 1200px;
+  margin: 0 auto;
 }
 
 .home-content h1 {
-  font-size: 100px;
+  font-size: clamp(24px, 8vw, 60px);
   font-weight: bold;
   color: #fff;
-  margin-bottom: 30px;
+  margin-bottom: 20px;
+  text-align: center;
 }
 
 .subtitle {
-  font-size: 60px;
+  font-size: clamp(16px, 5vw, 32px);
   font-weight: bold;
   color: #fff;
-  margin-bottom: 35px;
+  margin-bottom: 30px;
+  text-align: center;
 }
 
 .main-nav {
   display: flex;
   flex-direction: column;
-  margin-bottom: 20px;
-  gap: 40px;
+  margin-bottom: 40px;
+  gap: 20px;
 }
 
 .main-nav a {
-  font-size: 40px;
+  font-size: clamp(14px, 4vw, 24px);
   font-weight: bold;
   color: #fff;
   text-decoration: none;
+  padding: 8px 16px;
+  border-radius: 8px;
+  transition: background-color 0.3s ease;
+}
+
+.main-nav a:hover {
+  background-color: rgba(255, 255, 255, 0.1);
 }
 
 .social-icons {
@@ -92,8 +103,54 @@ body {
   flex-direction: row;
   justify-content: center;
   z-index: 50;
-  bottom: 1cm;
-  gap: 30px;
+  bottom: 20px;
+  gap: 20px;
+}
+
+.social-icons a {
+  padding: 10px;
+  border-radius: 50%;
+  background-color: rgba(255, 255, 255, 0.1);
+  transition: background-color 0.3s ease;
+}
+
+.social-icons a:hover {
+  background-color: rgba(255, 255, 255, 0.2);
+}
+
+/* Responsive Design for Mobile */
+@media (max-width: 768px) {
+  .home-content {
+    margin-top: 0;
+    padding: 40px 20px;
+  }
+  
+  .main-nav {
+    gap: 15px;
+  }
+  
+  .social-icons {
+    bottom: 15px;
+    gap: 15px;
+  }
+}
+
+@media (max-width: 480px) {
+  .home-content {
+    padding: 20px 15px;
+  }
+  
+  .home-content h1 {
+    margin-bottom: 15px;
+  }
+  
+  .subtitle {
+    margin-bottom: 25px;
+  }
+  
+  .main-nav {
+    gap: 12px;
+  }
 }
 
 /* About page styles */
@@ -298,5 +355,97 @@ h3 {
   font-weight: 600;
   color: #1f2937;
   margin: 1.5rem 0 0.75rem;
+}
+
+/* COMPREHENSIVE RESPONSIVE FIXES FOR ALL PAGES */
+
+/* Fix oversized fonts globally */
+@media (max-width: 1200px) {
+  .publications-content h1,
+  .certifications-content h1,
+  .courses-content h1 {
+    font-size: clamp(28px, 6vw, 48px) !important;
+  }
+  
+  .publications-text,
+  .certifications-text,
+  .courses-text {
+    font-size: clamp(16px, 3vw, 20px) !important;
+    padding: 0 1rem !important;
+  }
+}
+
+@media (max-width: 768px) {
+  /* Fix all large text */
+  h1 {
+    font-size: clamp(24px, 6vw, 32px) !important;
+  }
+  
+  h2 {
+    font-size: clamp(20px, 5vw, 28px) !important;
+  }
+  
+  h3 {
+    font-size: clamp(18px, 4vw, 24px) !important;
+  }
+  
+  /* Fix all oversized body text */
+  p, div, span, a, blockquote {
+    font-size: clamp(14px, 3vw, 18px) !important;
+  }
+  
+  blockquote p,
+  blockquote strong,
+  blockquote em {
+    font-size: clamp(14px, 3vw, 18px) !important;
+  }
+  
+  /* Fix container padding */
+  .publications-content,
+  .certifications-content,
+  .courses-content,
+  .about-content {
+    padding: 1rem !important;
+    max-width: 100% !important;
+  }
+  
+  /* Fix any fixed-width content */
+  div[style*="maxWidth"],
+  div[style*="max-width"],
+  div[style*="width"] {
+    max-width: 100% !important;
+    width: 100% !important;
+    padding-left: 10px !important;
+    padding-right: 10px !important;
+  }
+}
+
+@media (max-width: 480px) {
+  /* Extra small screens */
+  h1 {
+    font-size: clamp(20px, 6vw, 28px) !important;
+  }
+  
+  h2 {
+    font-size: clamp(18px, 5vw, 24px) !important;
+  }
+  
+  p, div, span, a {
+    font-size: clamp(12px, 3vw, 16px) !important;
+  }
+  
+  /* Ensure all containers are responsive */
+  div[style*="padding"] {
+    padding: 15px !important;
+  }
+  
+  div[style*="fontSize"] {
+    font-size: clamp(12px, 3vw, 16px) !important;
+  }
+  
+  /* Fix margin issues */
+  div[style*="margin"] {
+    margin: 10px auto !important;
+  }
 }
 
