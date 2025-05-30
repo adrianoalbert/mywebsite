@@ -1,0 +1,302 @@
+/*!*****************************************************************************************************************************************************************************************************************************************************************!*\
+  !*** css ./node_modules/next/dist/build/webpack/loaders/css-loader/src/index.js??ruleSet[1].rules[13].oneOf[10].use[2]!./node_modules/next/dist/build/webpack/loaders/postcss-loader/src/index.js??ruleSet[1].rules[13].oneOf[10].use[3]!./src/app/globals.css ***!
+  \*****************************************************************************************************************************************************************************************************************************************************************/
+/* Base styles */
+:root {
+  --background: #ffffff;
+  --foreground: #171717;
+}
+
+@media (prefers-color-scheme: dark) {
+  :root {
+    --background: #0a0a0a;
+    --foreground: #ededed;
+  }
+}
+
+body {
+  background: var(--background);
+  color: var(--foreground);
+  font-family: Arial, Helvetica, sans-serif;
+  margin: 0;
+  padding: 0;
+}
+
+/* Home page styles */
+.home-page {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  min-height: 100vh;
+  width: 100%;
+  text-align: center;
+  background-image: url('/bg-tech-2.jpg');
+  background-size: cover;
+  background-position: center;
+  color: white;
+}
+
+.home-overlay {
+  position: absolute;
+  inset: 0;
+  background-color: black;
+  opacity: 0.5;
+}
+
+.home-content {
+  position: relative;
+  z-index: 10;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  margin-top: -10cm;
+}
+
+.home-content h1 {
+  font-size: 100px;
+  font-weight: bold;
+  color: #fff;
+  margin-bottom: 30px;
+}
+
+.subtitle {
+  font-size: 60px;
+  font-weight: bold;
+  color: #fff;
+  margin-bottom: 35px;
+}
+
+.main-nav {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 20px;
+  gap: 40px;
+}
+
+.main-nav a {
+  font-size: 40px;
+  font-weight: bold;
+  color: #fff;
+  text-decoration: none;
+}
+
+.social-icons {
+  position: fixed;
+  left: 50%;
+  transform: translateX(-50%);
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  z-index: 50;
+  bottom: 1cm;
+  gap: 30px;
+}
+
+/* About page styles */
+.about-page {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  min-height: 100vh;
+  width: 100%;
+  text-align: center;
+  background-image: url('/bg-tech-2.jpg');
+  background-size: cover;
+  background-position: center;
+  color: white;
+}
+
+.about-overlay {
+  position: absolute;
+  inset: 0;
+  background-color: black;
+  opacity: 0.5;
+}
+
+.about-content {
+  position: relative;
+  z-index: 10;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  margin-top: -5cm;
+}
+
+.about-content h1 {
+  font-size: 60px;
+  font-weight: bold;
+  color: white;
+  margin-bottom: 30px;
+}
+
+.about-text {
+  text-align: left;
+  max-width: 64rem;
+  margin: 0 auto;
+  padding: 0 2rem;
+  font-size: 24px;
+  line-height: 1.6;
+}
+
+/* Publications page styles */
+.publications-page {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  min-height: 100vh;
+  width: 100%;
+  text-align: center;
+  background-color: #f8f9fa;
+  color: #212529;
+}
+
+.publications-content {
+  position: relative;
+  z-index: 10;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 2rem;
+}
+
+.publications-content h1 {
+  font-size: 60px;
+  font-weight: bold;
+  color: #1a1a1a;
+  margin-bottom: 30px;
+}
+
+.publications-text {
+  text-align: left;
+  max-width: 64rem;
+  margin: 0 auto;
+  padding: 0 2rem;
+  font-size: 24px;
+  line-height: 1.6;
+  color: #333;
+}
+
+/* Remove the overlay since we're using a solid background */
+.publications-overlay {
+  display: none;
+}
+
+/* Basic styles for publications content */
+blockquote {
+  border-left: 4px solid #ccc;
+  margin: 1em 0;
+  padding-left: 1em;
+  font-size: 24px;
+}
+
+blockquote p {
+  margin: 0.5em 0;
+  font-size: 24px;
+}
+
+blockquote strong {
+  color: #fff;
+  font-weight: bold;
+  font-size: 24px;
+}
+
+blockquote em {
+  color: #ddd;
+  font-style: italic;
+  font-size: 24px;
+}
+
+a {
+  color: #4a9eff;
+  text-decoration: none;
+  font-size: 24px;
+}
+
+a:hover {
+  text-decoration: underline;
+}
+
+h1 {
+  font-size: 2.5em;
+  font-weight: bold;
+  margin-bottom: 1em;
+}
+
+h2 {
+  font-size: 2em;
+  font-weight: bold;
+  margin: 1em 0 0.5em;
+}
+
+h3 {
+  font-size: 1.5em;
+  font-weight: bold;
+  margin: 1em 0 0.5em;
+}
+
+/* Markdown content styles */
+.markdown-content blockquote {
+  border-left: 4px solid #e5e7eb;
+  padding-left: 1rem;
+  margin: 1rem 0;
+  font-size: 24px;
+}
+
+.markdown-content blockquote p {
+  margin: 0.5rem 0;
+}
+
+.markdown-content blockquote strong {
+  color: #111827;
+  font-weight: 600;
+}
+
+.markdown-content blockquote em {
+  color: #374151;
+  font-style: italic;
+}
+
+.markdown-content a {
+  color: #2563eb;
+  font-size: 24px;
+}
+
+.markdown-content a:hover {
+  color: #1d4ed8;
+}
+
+.markdown-content h1 {
+  font-size: 2.25rem;
+  font-weight: bold;
+  color: #111827;
+  margin-bottom: 2rem;
+}
+
+.markdown-content h2 {
+  font-size: 1.5rem;
+  font-weight: 600;
+  color: #1f2937;
+  margin: 2rem 0 1rem;
+}
+
+.markdown-content h3 {
+  font-size: 1.25rem;
+  font-weight: 600;
+  color: #1f2937;
+  margin: 1.5rem 0 0.75rem;
+}
+
