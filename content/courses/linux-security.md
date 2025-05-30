@@ -3,7 +3,7 @@ title: Linux セキュリティ
 date: '2020-07-21'
 author: Adriano Albert L. A. L. Muniz
 tags: [Linux, Security, Training]
-certificate: '/images/courses/linux-security.pdf'
+certificate: '/images/courses/Linux Security Certificate.pdf'
 ---
 
 ## コース概要
