@@ -8,8 +8,9 @@ export async function generateStaticParams() {
   }))
 }
 
-export default async function CoursePage({ params }: { params: { slug: string } }) {
-  const course = await getContentBySlug('courses', params.slug)
+export default async function CoursePage({ params }: { params: Promise<{ slug: string }> }) {
+  const { slug } = await params
+  const course = await getContentBySlug('courses', slug)
   
   if (!course) {
     return <div>Course not found</div>

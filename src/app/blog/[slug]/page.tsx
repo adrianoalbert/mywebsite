@@ -2,13 +2,14 @@ import { getContentBySlug } from '@/lib/markdown'
 import { notFound } from 'next/navigation'
 
 type Props = {
-  params: {
+  params: Promise<{
     slug: string
-  }
+  }>
 }
 
 export default async function BlogPost({ params }: Props) {
-  const post = await getContentBySlug('blog', params.slug)
+  const { slug } = await params
+  const post = await getContentBySlug('blog', slug)
 
   if (!post) {
     notFound()
