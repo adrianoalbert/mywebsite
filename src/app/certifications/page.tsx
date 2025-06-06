@@ -1,4 +1,5 @@
 import Link from 'next/link'
+import Image from 'next/image'
 import { getContentByType } from '@/lib/markdown'
 import styles from '../styles/Card.module.css'
 
@@ -29,6 +30,18 @@ export default async function CertificationsPage() {
         <div className={styles.grid}>
           {certifications.map((cert) => (
             <div key={cert.slug} className={styles.card}>
+              {cert.image && (
+                <div className={styles.imageContainer}>
+                  <Image
+                    src={cert.image}
+                    alt={`${cert.title} Certificate`}
+                    width={300}
+                    height={200}
+                    className={styles.certImage}
+                    priority={false}
+                  />
+                </div>
+              )}
               <h2 className={styles.title}>{cert.title}</h2>
               <div className={styles.dateInfo}>
                 {cert.issued && (
@@ -47,8 +60,19 @@ export default async function CertificationsPage() {
                   </p>
                 )}
               </div>
-              {cert.tags && cert.tags.length > 0 && (
+              {/* Skills section commented out - can be restored later if needed
+              {(cert.skills && cert.skills.length > 0) ? (
                 <div className={styles.tags}>
+                  <strong>Skills:</strong>
+                  {cert.skills.map((skill) => (
+                    <span key={skill} className={styles.tag}>
+                      {skill}
+                    </span>
+                  ))}
+                </div>
+              ) : (cert.tags && cert.tags.length > 0) && (
+                <div className={styles.tags}>
+                  <strong>Skills:</strong>
                   {cert.tags.map((tag) => (
                     <span key={tag} className={styles.tag}>
                       {tag}
@@ -56,6 +80,7 @@ export default async function CertificationsPage() {
                   ))}
                 </div>
               )}
+              */}
               {cert.badge && (
                 <Link 
                   href={cert.badge}

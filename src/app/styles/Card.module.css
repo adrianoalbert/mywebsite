@@ -88,10 +88,14 @@
 
 .date {
   color: #ccc;
-  margin-bottom: 25px;
+  margin-bottom: 10px;
   font-size: 18px;
   font-weight: 500;
   text-align: center;
+}
+
+.dateInfo {
+  margin-bottom: 2px;
 }
 
 .tags {
@@ -119,9 +123,9 @@
   gap: 8px;
   background: linear-gradient(135deg, #4a90e2, #357abd);
   color: white;
-  padding: 12px 24px;
+  padding: 14px 28px;
   border-radius: 25px;
-  font-size: 16px;
+  font-size: 24px;
   font-weight: 600;
   text-decoration: none;
   margin-top: auto;
@@ -130,7 +134,7 @@
   border: 1px solid rgba(255, 255, 255, 0.1);
   position: relative;
   overflow: hidden;
-  min-width: 140px;
+  min-width: 150px;
 }
 
 .button::before {
@@ -201,5 +205,67 @@
 @media (max-width: 360px) {
   .header {
     font-size: clamp(32px, 8vw, 44px) !important;
+  }
+}
+
+/* Certification Image Styles */
+.imageContainer {
+  position: relative;
+  width: 85%;
+  max-width: 320px;
+  margin: 0 auto 25px auto;
+  border-radius: 12px;
+  overflow: hidden;
+  background: rgba(255, 255, 255, 0.05);
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  backdrop-filter: blur(5px);
+  transition: all 0.3s ease;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.imageContainer:hover {
+  transform: scale(1.02);
+  box-shadow: 0 8px 25px rgba(0, 0, 0, 0.3);
+  border-color: rgba(255, 255, 255, 0.2);
+}
+
+.certImage {
+  width: 100% !important;
+  height: auto !important;
+  object-fit: contain;
+  transition: all 0.3s ease;
+  border-radius: 8px;
+  background: white;
+  padding: 12px;
+}
+
+.certImage:hover {
+  transform: scale(1.05);
+}
+
+/* Mobile responsive image styles */
+@media (max-width: 768px) {
+  .imageContainer {
+    width: 90%;
+    max-width: 280px;
+    margin-bottom: 20px;
+  }
+  
+  .certImage {
+    padding: 10px;
+  }
+}
+
+@media (max-width: 480px) {
+  .imageContainer {
+    width: 95%;
+    max-width: 240px;
+    margin-bottom: 18px;
+  }
+  
+  .certImage {
+    padding: 8px;
   }
 } 
