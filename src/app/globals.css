@@ -405,14 +405,14 @@ h3 {
   }
   
   .home-content h1 {
-    font-size: clamp(24px, 7vw, 36px) !important;
+    font-size: 27px !important;
     margin-bottom: 15px;
     white-space: normal !important;
     line-height: 1.2;
   }
   
   .subtitle {
-    font-size: clamp(16px, 5vw, 24px) !important;
+    font-size: 20px !important;
     margin-bottom: 25px;
   }
   
@@ -530,14 +530,14 @@ h3 {
 /* Extra small mobile phones */
 @media (max-width: 360px) {
   .home-content h1 {
-    font-size: clamp(20px, 6vw, 30px) !important;
+    font-size: 22px !important;
     white-space: normal !important;
     line-height: 1.1;
     letter-spacing: 1px !important;
   }
   
   .subtitle {
-    font-size: clamp(14px, 4vw, 20px) !important;
+    font-size: 16px !important;
   }
   
   .main-nav a {
