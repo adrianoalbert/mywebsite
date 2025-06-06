@@ -1,7 +1,9 @@
 ---
 title: 'CompTIA Cybersecurity Analyst (CySA+)'
 #date: '2024-03-20'
-issued: 'Mar 2025'
+issued: 'March 02, 2025'
+expires: 'March 02, 2028'
+
 tags: ['Security', 'Cybersecurity', 'CompTIA', 'CySA+']
 badge: 'https://www.credly.com/badges/db22925e-79bc-43d5-a3f2-bb8a62e5a2bb/public_url'
 ---

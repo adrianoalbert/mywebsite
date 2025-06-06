@@ -30,9 +30,23 @@ export default async function CertificationsPage() {
           {certifications.map((cert) => (
             <div key={cert.slug} className={styles.card}>
               <h2 className={styles.title}>{cert.title}</h2>
-              <p className={styles.date}>
-                {cert.issued ? `Issued: ${cert.issued}` : new Date(cert.date).toLocaleDateString()}
-              </p>
+              <div className={styles.dateInfo}>
+                {cert.issued && (
+                  <p className={styles.date}>
+                    <strong>Date issued:</strong> {cert.issued}
+                  </p>
+                )}
+                {cert.expires && (
+                  <p className={styles.date}>
+                    <strong>Expires:</strong> {cert.expires}
+                  </p>
+                )}
+                {!cert.issued && !cert.expires && cert.date && (
+                  <p className={styles.date}>
+                    {new Date(cert.date).toLocaleDateString()}
+                  </p>
+                )}
+              </div>
               {cert.tags && cert.tags.length > 0 && (
                 <div className={styles.tags}>
                   {cert.tags.map((tag) => (

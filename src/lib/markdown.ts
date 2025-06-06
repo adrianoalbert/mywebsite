@@ -14,6 +14,7 @@ export interface ContentItem {
   badge?: string
   certificate?: string
   issued?: string
+  expires?: string
 }
 
 const contentDirectory = path.join(process.cwd(), 'content')
@@ -44,7 +45,8 @@ export async function getContentByType(type: string): Promise<ContentItem[]> {
           content: processedContent.toString(),
           badge: data.badge || '',
           certificate: data.certificate || '',
-          issued: data.issued || ''
+          issued: data.issued || '',
+          expires: data.expires || ''
         }
       })
     )
@@ -75,7 +77,8 @@ export async function getContentBySlug(type: string, slug: string): Promise<Cont
       content: contentHtml,
       badge: data.badge || '',
       certificate: data.certificate || '',
-      issued: data.issued || ''
+      issued: data.issued || '',
+      expires: data.expires || ''
     }
   } catch (error) {
     console.error(`Error loading content ${slug} from ${type}:`, error)
