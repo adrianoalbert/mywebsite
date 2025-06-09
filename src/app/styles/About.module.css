@@ -1,0 +1,107 @@
+.container {
+  position: relative;
+  min-height: 100vh;
+  width: 100%;
+  background-image: url('/bg-tech-2.jpg');
+  background-size: cover;
+  background-position: center;
+  color: white;
+}
+
+.overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: rgba(0, 0, 0, 0.7);
+}
+
+.content {
+  position: relative;
+  z-index: 1;
+  max-width: 1000px;
+  margin: 0 auto;
+  padding: 60px 20px;
+}
+
+.header {
+  display: flex;
+  align-items: center;
+  gap: 15px;
+  margin-bottom: 30px;
+  font-size: 36px;
+  font-weight: bold;
+}
+
+.headerIcon {
+  width: 40px;
+  height: 40px;
+}
+
+.textContent {
+  font-size: 24px;
+  line-height: 1.8;
+  color: white;
+  background-color: rgba(0, 0, 0, 0.5);
+  padding: 40px;
+  border-radius: 8px;
+}
+
+/* Mobile responsive styles */
+@media (max-width: 768px) {
+  .content {
+    padding: 40px 15px;
+  }
+  
+  .header {
+    font-size: 28px;
+    margin-bottom: 25px;
+  }
+  
+  .headerIcon {
+    width: 32px;
+    height: 32px;
+  }
+  
+  .textContent {
+    font-size: 18px;
+    line-height: 1.7;
+    padding: 25px;
+  }
+}
+
+@media (max-width: 480px) {
+  .content {
+    padding: 30px 10px;
+  }
+  
+  .header {
+    font-size: 24px;
+    margin-bottom: 20px;
+    gap: 10px;
+  }
+  
+  .headerIcon {
+    width: 28px;
+    height: 28px;
+  }
+  
+  .textContent {
+    font-size: 16px;
+    line-height: 1.6;
+    padding: 20px;
+  }
+}
+
+/* Extra small mobile phones */
+@media (max-width: 360px) {
+  .header {
+    font-size: 20px;
+  }
+  
+  .textContent {
+    font-size: 15px;
+    padding: 15px;
+  }
+} 

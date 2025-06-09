@@ -47,6 +47,7 @@
   max-width: 1200px;
   margin: 0 auto;
   padding: 0 20px;
+  align-items: start;
 }
 
 .card {
@@ -60,6 +61,8 @@
   backdrop-filter: blur(10px);
   border: 1px solid rgba(255, 255, 255, 0.1);
   cursor: pointer;
+  height: auto;
+  min-height: fit-content;
 }
 
 .card:hover {

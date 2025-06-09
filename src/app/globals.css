@@ -56,27 +56,29 @@ body {
 }
 
 .home-content h1 {
-  font-size: 64px;
+  font-size: clamp(22px, 6vw, 64px);
   font-weight: bold;
   color: #fff;
   margin-bottom: 20px;
   text-align: center;
-  letter-spacing: 2px;
+  letter-spacing: clamp(1px, 0.3vw, 2px);
   text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.8);
   font-family: 'Georgia', 'Times New Roman', serif;
   white-space: nowrap;
+  line-height: 1.2;
 }
 
 .subtitle {
-  font-size: 26px;
+  font-size: clamp(16px, 4vw, 26px);
   font-weight: bold;
   color: #fff;
   margin-bottom: 30px;
   text-align: center;
-  letter-spacing: 1.5px;
+  letter-spacing: clamp(0.8px, 0.2vw, 1.5px);
   text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.7);
   font-family: 'Georgia', 'Times New Roman', serif;
   font-style: italic;
+  line-height: 1.3;
 }
 
 .main-nav {
@@ -398,6 +400,17 @@ h3 {
   }
 }
 
+/* Tablet screens */
+@media (max-width: 768px) and (min-width: 481px) {
+  .home-content h1 {
+    white-space: normal;
+  }
+  
+  .subtitle {
+    line-height: 1.4;
+  }
+}
+
 /* Small mobile phones - Better sizing for smartphones */
 @media (max-width: 480px) {
   .home-content {
@@ -405,14 +418,11 @@ h3 {
   }
   
   .home-content h1 {
-    font-size: 27px !important;
-    margin-bottom: 15px;
     white-space: normal !important;
-    line-height: 1.2;
+    margin-bottom: 15px;
   }
   
   .subtitle {
-    font-size: 20px !important;
     margin-bottom: 25px;
   }
   
@@ -530,14 +540,11 @@ h3 {
 /* Extra small mobile phones */
 @media (max-width: 360px) {
   .home-content h1 {
-    font-size: 22px !important;
     white-space: normal !important;
-    line-height: 1.1;
-    letter-spacing: 1px !important;
   }
   
   .subtitle {
-    font-size: 16px !important;
+    margin-bottom: 20px;
   }
   
   .main-nav a {
