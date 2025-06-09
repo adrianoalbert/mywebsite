@@ -1,5 +1,4 @@
 import { getContentByType, getContentBySlug } from '@/lib/markdown'
-import Link from 'next/link'
 
 export async function generateStaticParams() {
   const courses = await getContentByType('courses')
