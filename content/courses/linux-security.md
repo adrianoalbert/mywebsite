@@ -84,5 +84,4 @@ certificate: '/images/courses/Linux Security Certificate.pdf'
    - firewald ゾーンのルール設定  
    - firewald インタフェース割り当て
 
- ## Certification
-   Participants receive a certificate of completion upon successfully finishing the course.
+ 

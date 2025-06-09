@@ -35,24 +35,23 @@ export default async function CoursesPage() {
         </div>
         <div className={styles.grid}>
           {courses.map((course) => (
-            <Link 
-              key={course.slug} 
-              href={`/courses/${course.slug}`}
-              style={{ textDecoration: 'none', color: 'inherit' }}
-            >
-              <div className={styles.card}>
-                <h2 className={styles.title}>{course.title}</h2>
-                <p className={styles.date}>{new Date(course.date).toLocaleDateString()}</p>
-                {course.tags && course.tags.length > 0 && (
-                  <div className={styles.tags}>
-                    {course.tags.map((tag) => (
-                      <span key={tag} className={styles.tag}>
-                        {tag}
-                      </span>
-                    ))}
-                  </div>
-                )}
-                <div style={{ marginTop: 'auto' }}>
+            <div key={course.slug} className={styles.card}>
+              <h2 className={styles.title}>{course.title}</h2>
+              <p className={styles.date}>{new Date(course.date).toLocaleDateString()}</p>
+              {course.tags && course.tags.length > 0 && (
+                <div className={styles.tags}>
+                  {course.tags.map((tag) => (
+                    <span key={tag} className={styles.tag}>
+                      {tag}
+                    </span>
+                  ))}
+                </div>
+              )}
+              <div style={{ marginTop: 'auto', display: 'flex', flexDirection: 'column', gap: '10px' }}>
+                <Link 
+                  href={`/courses/${course.slug}`}
+                  style={{ textDecoration: 'none', color: 'inherit' }}
+                >
                   <span className={styles.button}>
                     View Details
                     <svg 
@@ -70,9 +69,35 @@ export default async function CoursesPage() {
                       <path d="m12 5 7 7-7 7"/>
                     </svg>
                   </span>
-                </div>
+                </Link>
+                {course.certificate && (
+                  <Link 
+                    href={course.certificate}
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className={styles.button}
+                    style={{ backgroundColor: 'rgba(76, 175, 80, 0.8)' }}
+                  >
+                    Show Credentials
+                    <svg 
+                      xmlns="http://www.w3.org/2000/svg" 
+                      width="20" 
+                      height="20" 
+                      viewBox="0 0 24 24" 
+                      fill="none" 
+                      stroke="currentColor" 
+                      strokeWidth="2" 
+                      strokeLinecap="round" 
+                      strokeLinejoin="round"
+                    >
+                      <path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"/>
+                      <polyline points="15 3 21 3 21 9"/>
+                      <line x1="10" y1="14" x2="21" y2="3"/>
+                    </svg>
+                  </Link>
+                )}
               </div>
-            </Link>
+            </div>
           ))}
         </div>
       </div>

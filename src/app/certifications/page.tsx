@@ -88,7 +88,7 @@ export default async function CertificationsPage() {
                   rel="noopener noreferrer"
                   className={styles.button}
                 >
-                  View Badge
+                  Show Credentials
                   <svg 
                     xmlns="http://www.w3.org/2000/svg" 
                     width="20" 
