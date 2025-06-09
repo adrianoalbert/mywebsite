@@ -9,7 +9,7 @@ export default function Home() {
       
       <div className="home-content">
         <h1>Adriano Albert Muniz, Ph.D.</h1>
-        <div className="subtitle">Senior IT/OT Systems Engineer | Computer Network Researcher</div>
+        <div className="subtitle">Lead IT/OT Systems Engineer | Experienced in Computer Networks Research</div>
         <nav className="main-nav">
           <Link href="/about">About</Link>
           <Link href="/blog">Blog</Link>
