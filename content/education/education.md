@@ -10,14 +10,10 @@ description: 'Academic background and educational qualifications'
 
 **Activities and societies:** President and Vice President of Foreign Student Association of Kyushu Institute of Technology (Iizuka Campus)
 
----
-
 ## 🎓 Master of Engineering
 **Kyushu Institute of Technology**  
 *Master of Engineering - MEng, Computer Science and Systems Engineering*  
 **2007 - 2009**
-
----
 
 ## 🔬 Research Student
 **Kyushu University**  
@@ -26,16 +22,12 @@ description: 'Academic background and educational qualifications'
 
 **Activities and societies:** International Student Residence Supporter
 
----
-
 ## 🇯🇵 Japanese Language Course
 **Kyushu University**  
 *Intensive Japanese Language Course*  
 **2005 - 2005**
 
 Completed the intensive Japanese Language Course given at the International Student Center Kyushu University from April, 2005 to September, 2005
-
----
 
 ## 🎓 Bachelor's Degree
 **Universidade Estadual do Piauí**  

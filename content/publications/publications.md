@@ -37,18 +37,20 @@ description: 'Academic and professional publications'
 > **Network supported TCP Rate Control for the Coexistence of Multiple Flows in IP over PLC**  
 > *A. Muniz, K. Tsukamoto, M. Tsuru, Y. Oie*  
 > International Symposium on Power Line Communications and its Applications (ISPLC)  
-> Beijing, China • March 27-30, 2012
+> Beijing, China • March 27-30, 2012 
+>  [📚 Access Conference Program](https://isplc2012.ieee-isplc.org/program.html)
 
 ### 2009
 > **Distributed Channel Coordination in Cognitive Wireless V2V Communications**  
 > *A. Muniz, S. Matsuoka, K. Tsukamoto, O. Altintas, M. Tsuru, and Y. Oie*  
 > The Institute of Electronics, Information and Communication Engineers (IEICE)  
 > Tokyo, Japan • January 28-29, 2009 • pp. 47-66
-
+> [📄 PDF](https://ken.ieice.org/ken/paper/20090129qaJ5/eng/)
+ 
 ## 📖 Ph.D. Thesis
 
 ### 2015
 > **Studies on Techniques for Improving End-to-End TCP Performance over PLC with Wired and Wireless Networks**  
-> *Adriano Albert Muniz*  
+> *Adriano Albert Lima de Area Leão Muniz*  
 > Ph.D. Thesis  
-> [📚 Access Thesis](https://kyutech.repo.nii.ac.jp/records/4151) 
+> [📚 Access Thesis](https://kyutech.repo.nii.ac.jp/records/4239) 

@@ -24,6 +24,17 @@ Adriano Albert L. A. L. Muniz received his B.E. degree in Computer Science from 
 
   <div class="education-entry">
     <div class="edu-logo">
+      <img src="/images/education/kyutech-logo.svg" alt="Kyutech">
+    </div>
+    <div class="edu-content">
+      <h3 class="institution">Kyushu Institute of Technology</h3>
+      <p class="degree">Master of Engineering - MEng, Computer Science and Systems Engineering</p>
+      <p class="duration">2007 - 2009</p>
+    </div>
+  </div>
+
+  <div class="education-entry">
+    <div class="edu-logo">
       <img src="/images/education/kyushu-university-logo.svg" alt="Kyushu University">
     </div>
     <div class="edu-content">
@@ -31,17 +42,6 @@ Adriano Albert L. A. L. Muniz received his B.E. degree in Computer Science from 
       <p class="degree">Research Student, Computer Science and Communication Engineering</p>
       <p class="duration">2005 - 2007</p>
       <p class="activities">Activities and societies: International Student Residence Supporter</p>
-    </div>
-  </div>
-
-  <div class="education-entry">
-    <div class="edu-logo">
-      <img src="/images/education/kyutech-logo.svg" alt="Kyutech">
-    </div>
-    <div class="edu-content">
-      <h3 class="institution">Kyushu Institute of Technology</h3>
-      <p class="degree">Master of Engineering - MEng, Computer Science and Systems Engineering</p>
-      <p class="duration">2007 - 2009</p>
     </div>
   </div>
 
