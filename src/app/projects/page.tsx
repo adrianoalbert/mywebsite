@@ -1,7 +1,7 @@
 import { getContentByType } from '@/lib/markdown'
 
-export default async function BlogPage() {
-  const posts = await getContentByType('blog')
+export default async function ProjectsPage() {
+  const projects = await getContentByType('projects')
 
   return (
     <div style={{
@@ -40,24 +40,18 @@ export default async function BlogPage() {
             strokeLinecap="round" 
             strokeLinejoin="round"
           >
-            <path d="M4 19.5A2.5 2.5 0 0 1 6.5 17H20"/>
-            <path d="M6.5 2H20v20H6.5A2.5 2.5 0 0 1 4 19.5v-15A2.5 2.5 0 0 1 6.5 2z"/>
-            <path d="M12 6h4"/>
-            <path d="M12 10h4"/>
-            <path d="M12 14h4"/>
-            <path d="M8 6h.01"/>
-            <path d="M8 10h.01"/>
-            <path d="M8 14h.01"/>
+            <path d="M3 7v10a2 2 0 0 0 2 2h14a2 2 0 0 0 2-2V9a2 2 0 0 0-2-2H5a2 2 0 0 0-2 2z"/>
+            <path d="M8 21l8-4-8-4"/>
           </svg>
-          Blog
+          Projects
         </div>
         <div style={{
           display: 'grid',
           gridTemplateColumns: 'repeat(auto-fill, minmax(300px, 1fr))',
           gap: '30px'
         }}>
-          {posts.map((post) => (
-            <div key={post.slug} style={{
+          {projects.map((project) => (
+            <div key={project.slug} style={{
               backgroundColor: 'rgba(0, 0, 0, 0.5)',
               borderRadius: '8px',
               padding: '20px',
@@ -72,19 +66,19 @@ export default async function BlogPage() {
                 fontSize: '24px',
                 fontWeight: 'bold',
                 marginBottom: '10px'
-              }}>{post.title}</h2>
+              }}>{project.title}</h2>
               <p style={{
                 color: '#ccc',
                 marginBottom: '15px'
-              }}>{new Date(post.date).toLocaleDateString()}</p>
-              {post.tags && post.tags.length > 0 && (
+              }}>{new Date(project.date).toLocaleDateString()}</p>
+              {project.tags && project.tags.length > 0 && (
                 <div style={{
                   display: 'flex',
                   flexWrap: 'wrap',
                   gap: '8px',
                   marginBottom: '15px'
                 }}>
-                  {post.tags.map((tag) => (
+                  {project.tags.map((tag) => (
                     <span key={tag} style={{
                       backgroundColor: 'rgba(255, 255, 255, 0.1)',
                       padding: '4px 12px',
@@ -105,7 +99,7 @@ export default async function BlogPage() {
                   borderRadius: '4px',
                   fontSize: '14px'
                 }}>
-                  Read More
+                  View Project
                 </span>
               </div>
             </div>

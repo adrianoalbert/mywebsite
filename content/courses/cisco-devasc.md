@@ -8,6 +8,16 @@ end_date: '2022-07-05'
 certificate: '/images/courses/Cisco DEVASC Certificate.pdf'
 ---
 
+
+## Course Details
+- **Duration**: 5 days
+- **Start Date**: July 1, 2022 (placeholder - please provide actual dates)
+- **End Date**: July 5, 2022 (placeholder - please provide actual dates)
+- **Level**: Intermediate
+- **Course Code**: DEVASC
+- **Lab Environment**: Cisco Remote Labs
+- **Note**: This course is a prerequisite for DEVCOR 
+
 ## コース概要
 Ciscoのプラットフォームをベースとして基本的なネットワークアプリケーションを実装する方法と、ネットワーク、セキュリティ、コラボレーション、コンピューティングインフラストラクチャ全体に自動化ワークフローを実装する方法を学びます。このコースでは、Cisco APIと最新の開発ツールを使用して、現実世界の問題を解決する実践的な経験を提供します。
 
@@ -23,33 +33,33 @@ Ciscoのプラットフォームをベースとして基本的なネットワー
 
 ## 学習内容
 
-### 1. 現代のソフトウェア開発の特徴
+● 現代のソフトウェア開発の特徴
 
-### 2. ソフトウェア開発プロセス (*自習)
+● ソフトウェア開発プロセス (*自習)
 
-### 3. ソフトウェアの設計 (*自習)
+● ソフトウェアの設計 (*自習)
 
-### 4. ネットワークベースドAPI
+● ネットワークベースドAPI
 
-### 5. RESTベースAPIの利用
+● RESTベースAPIの利用
 
-### 6. シスコ製品とAPIの概要 (*自習)
+● シスコ製品とAPIの概要 (*自習)
 
-### 7. シスコ製品におけるプログラマビリティ
+● シスコ製品におけるプログラマビリティ
 
-### 8. IPネットワーク概要 (*自習)
+● IPネットワーク概要 (*自習)
 
-### 9. ネットワークとアプリケーション
+● ネットワークとアプリケーション
 
-### 10. YANG - モデル駆動型プログラマビリティ
+● YANG - モデル駆動型プログラマビリティ
 
-### 11. アプリケーションのデプロイ
+● アプリケーションのデプロイ
 
-### 12. インフラストラクチャの自動化
+● インフラストラクチャの自動化
 
-### 13. アプリケーションテスト
+● アプリケーションテスト
 
-### 14. セキュアなアプリケーション
+● セキュアなアプリケーション
 
 **(*自習)が付いているセクションは自主学習用の資料です。**  
 講師は「自習」部分は説明しません。本コース受講後にご自身で学習を進めて下さい。
@@ -79,12 +89,3 @@ Ciscoのプラットフォームをベースとして基本的なネットワー
 17. Dockerコマンドを使用したローカル開発環境を管理
 18. パラメータ入力のサニタイゼーション
 19. インフラストラクチャの自動化ワークフローの構築
-
-## Course Details
-- **Duration**: 5 days
-- **Start Date**: July 1, 2022 (placeholder - please provide actual dates)
-- **End Date**: July 5, 2022 (placeholder - please provide actual dates)
-- **Level**: Intermediate
-- **Course Code**: DEVASC
-- **Lab Environment**: Cisco Remote Labs
-- **Note**: This course is a prerequisite for DEVCOR 

@@ -12,10 +12,10 @@ export default function Home() {
         <div className="subtitle">Lead IT/OT Systems Engineer | Experienced in Computer Networks Research</div>
         <nav className="main-nav">
           <Link href="/about">About</Link>
-          <Link href="/blog">Blog</Link>
           <Link href="/certifications">Certifications</Link>
           <Link href="/courses">Courses</Link>
           <Link href="/publications">Publications</Link>
+          <Link href="/projects">Projects</Link>
         </nav>
       </div>
 

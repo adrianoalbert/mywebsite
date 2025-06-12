@@ -1,5 +1,6 @@
 import { getContentByType } from '@/lib/markdown'
 import styles from '../styles/About.module.css'
+import timelineStyles from '../styles/Timeline.module.css'
 
 export default async function AboutPage() {
   const about = await getContentByType('about')
@@ -26,7 +27,7 @@ export default async function AboutPage() {
           About Me
         </div>
         <div 
-          className={styles.textContent}
+          className={`${styles.textContent} ${timelineStyles.timelineContainer}`}
           dangerouslySetInnerHTML={{ __html: content.content }} 
         />
       </div>

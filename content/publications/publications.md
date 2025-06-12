@@ -3,8 +3,6 @@ title: 'Publications'
 description: 'Academic and professional publications'
 ---
 
-# 📚 Publications
-
 ## 📄 Journal Articles
 
 ### 2013
