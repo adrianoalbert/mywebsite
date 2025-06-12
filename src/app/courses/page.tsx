@@ -47,12 +47,13 @@ export default async function CoursesPage() {
                   ))}
                 </div>
               )}
-              <div style={{ marginTop: 'auto', display: 'flex', flexDirection: 'column', gap: '10px' }}>
+              <div style={{ marginTop: 'auto', display: 'flex', flexDirection: 'column', gap: '10px', alignItems: 'center' }}>
                 <Link 
                   href={`/courses/${course.slug}`}
+                  className={styles.button}
                   style={{ textDecoration: 'none', color: 'inherit' }}
                 >
-                  <span className={styles.button}>
+                  <span>
                     View Details
                     <svg 
                       xmlns="http://www.w3.org/2000/svg" 
