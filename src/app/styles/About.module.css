@@ -51,6 +51,23 @@
   border-radius: 8px;
 }
 
+/* Subsection headers */
+.aboutH2 {
+  font-size: 2rem;
+  margin-top: 2.5rem;
+  margin-bottom: 1rem;
+  font-weight: bold;
+  color: #fff;
+  text-shadow: 0 2px 4px rgba(0,0,0,0.3);
+}
+
+.aboutH3 {
+  font-size: 1.3rem;
+  margin-top: 1.5rem;
+  margin-bottom: 0.7rem;
+  color: #fff;
+}
+
 /* Mobile responsive styles */
 @media (max-width: 768px) {
   .content {
@@ -58,7 +75,7 @@
   }
   
   .header {
-    font-size: 28px;
+    font-size: 32px;
     margin-bottom: 25px;
   }
   
@@ -68,9 +85,16 @@
   }
   
   .textContent {
-    font-size: 20px;
+    font-size: 22px;
     line-height: 1.7;
     padding: 25px;
+  }
+  
+  .aboutH2 {
+    font-size: 1.7rem;
+  }
+  .aboutH3 {
+    font-size: 1.3rem;
   }
 }
 
@@ -80,7 +104,7 @@
   }
   
   .header {
-    font-size: 24px;
+    font-size: 28px;
     margin-bottom: 20px;
     gap: 10px;
   }
@@ -91,20 +115,27 @@
   }
   
   .textContent {
-    font-size: 18px;
+    font-size: 20px;
     line-height: 1.6;
     padding: 20px;
+  }
+  
+  .aboutH2 {
+    font-size: 1.4rem;
+  }
+  .aboutH3 {
+    font-size: 1.2rem;
   }
 }
 
 /* Extra small mobile phones */
 @media (max-width: 360px) {
   .header {
-    font-size: 20px;
+    font-size: 24px;
   }
   
   .textContent {
-    font-size: 16px;
+    font-size: 18px;
     padding: 15px;
   }
 } 
